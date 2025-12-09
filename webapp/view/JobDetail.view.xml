@@ -2,7 +2,14 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     
-    <Page id="jobPage">
+    <Page id="profPage"  title="Perfil Profesional" class="animatedPage">
+        <VBox id="profBox" class="sapUiLargeMargin">
+            <ObjectHeader id="textProf"
+                intro="Info"
+            />
+              <ObjectIdentifier id="textProf2" />
+            <Button id="btnBackProf" text="Volver" press=".onNavBack"  type="Back" />
+        </VBox>
     </Page>
 
 </mvc:View>

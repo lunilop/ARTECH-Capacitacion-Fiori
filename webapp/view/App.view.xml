@@ -1,6 +1,61 @@
-<mvc:View controllerName="dev.lunilop.clase3.controller.App"
+<mvc:View
+    controllerName="artechcapacitacionfiori.controller.App"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-    </Page>
+    xmlns="sap.m"
+>
+    <Shell id="initial">
+        <App id="app">
+            <Page
+                id="homePage"
+                title="Mi Información"
+                class="animatedPage"
+            >
+                <headerContent>
+                    <Button
+                        id="dark"
+                        icon="sap-icon://contrast"
+                        press=".toggleTheme"
+                        tooltip="Cambiar tema"
+                    />
+                </headerContent>
+                <VBox
+                    id="homeBox"
+                    class="sapUiLargeMargin sapUiSmallPadding"
+                >
+                    <ObjectHeader
+                        id="txtName"
+                        title="Luna Lopez"
+                        number="Desarolladora Backend and SAP"
+                        intro="Datos personales"
+                    />
+
+                    <ObjectIdentifier
+                        id="txtEmail"
+                        title="Email:"
+                        text="lunalopez0125@gmail.com"
+                    />
+                    <ObjectIdentifier
+                        id="txtGitHub"
+                        title="GitHub:"
+                        text="github.com/lunilop"
+                    />
+
+                    <Button
+                        id="btnHobbies"
+                        text="Mis Hobbies"
+                        press=".goToHobbiesDetail"
+                        icon="sap-icon://favorite"
+                        class="sapUiSmallMarginTop"
+                    />
+
+                    <Button
+                        id="btnProf"
+                        text="Mi Perfil Profesional"
+                        icon="sap-icon://employee"
+                        press=".goToJobDetail"
+                    />
+                </VBox>
+            </Page>
+        </App>
+    </Shell>
 </mvc:View>

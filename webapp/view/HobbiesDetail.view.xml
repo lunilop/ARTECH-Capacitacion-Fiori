@@ -1,6 +1,45 @@
-<mvc:View controllerName="artechcapacitacionfiori.controller.HobbiesDetail"
+<mvc:View
+    controllerName="artechcapacitacionfiori.controller.HobbiesDetail"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">  
-    <Page id="hobbiesPage">
+    xmlns="sap.m"
+>
+    <Page
+        id="hobbiesPage"
+        title="Mis Hobbies"
+        class="animatedPage"
+    >
+        <VBox
+            id="homeBox2"
+            class="sapUiLargeMargin"
+        >
+            <List
+                id="listHobbies"
+                headerText="Actividades que disfruto"
+            >
+                <StandardListItem
+                    id="txtHobbies1"
+                    title="Programar"
+                    icon="sap-icon://code"
+                />
+                <StandardListItem
+                    id="txtHobbies2"
+                    title="Leer"
+                    icon="sap-icon://book"
+                />
+                <StandardListItem
+                    id="txtHobbies3"
+                    title="Jugar volley"
+                    icon="sap-icon://initiative"
+                />
+            </List>
+
+            <Button
+                id="btnBackHobbies"
+                text="Volver"
+                press=".onNavBack"
+                class="sapUiSmallMarginTop"
+                type="Back"
+            />
+        </VBox>
     </Page>
 </mvc:View>
