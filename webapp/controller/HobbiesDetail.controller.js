@@ -4,8 +4,8 @@ sap.ui.define([
     "use strict";
 
     return Controller.extend("artechcapacitacionfiori.controller.HobbiesDetail", {
-        onInit() {
+        onNavBack: function () {
+            this.getOwnerComponent().getRouter().navTo("RouteApp");
         }
     });
 });
-
