@@ -1,7 +1,7 @@
 {
   "_version": "1.76.0",
   "sap.app": {
-    "id": "dev.lunilop.clase3",
+    "id": "artechcapacitacionfiori",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.19.6",
-      "toolsId": "11690d63-8894-4c40-ac1a-9264c54c1c1e"
+      "toolsId": "ecb05a89-8606-4f41-b0cf-6ba215ed8898"
     }
   },
   "sap.ui": {
@@ -49,7 +49,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "dev.lunilop.clase3.i18n.i18n"
+          "bundleName": "artechcapacitacionfiori.i18n.i18n"
         }
       }
     },
@@ -68,9 +68,8 @@
         "transition": "slide",
         "type": "View",
         "viewType": "XML",
-        "path": "dev.lunilop.clase3.view",
-        "async": true,
-        "viewPath": "dev.lunilop.clase3.view"
+        "path": "artechcapacitacionfiori.view",
+        "async": true
       },
       "routes": [
         {
@@ -79,19 +78,37 @@
           "target": [
             "TargetApp"
           ]
+        },
+        {
+          "name": "RouteHobbiesDetail",
+          "pattern": "HobbiesDetail/",
+          "target": ["TargetHobbiesDetail"]
+        },
+        {
+          "name": "RouteJobDetail",
+          "pattern": "JobDetail/{id}",
+          "target": ["TargetJobDetail"]
         }
       ],
       "targets": {
         "TargetApp": {
           "id": "App",
           "name": "App"
+        },
+        "TargetHobbiesDetail": {
+          "id": "HobbiesDetail",
+          "name": "HobbiesDetail"
+        },
+        "TargetJobDetail": {
+          "id": "JobDetail",
+          "name": "JobDetail"
         }
       }
     },
     "rootView": {
-      "viewName": "dev.lunilop.clase3.view.App",
+      "viewName": "artechcapacitacionfiori.view.App",
       "type": "XML",
-      "id": "App",
+      "id": "AppRoot",
       "async": true
     }
   }

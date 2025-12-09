@@ -1,0 +1,6 @@
+<mvc:View controllerName="artechcapacitacionfiori.controller.HobbiesDetail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">  
+    <Page id="hobbiesPage">
+    </Page>
+</mvc:View>

@@ -14,7 +14,7 @@ sap.ui.define([
 			// start the app UI component
 			this.iStartMyUIComponent({
 				componentConfig: {
-					name: "dev.lunilop.clase3",
+					name: "artechcapacitacionfiori",
 					async: true
 				},
 				hash: oOptions.hash,

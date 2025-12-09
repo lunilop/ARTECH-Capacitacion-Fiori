@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-	"dev/lunilop/clase3/controller/App.controller"
+	"artechcapacitacionfiori/controller/App.controller"
 ], function (Controller) {
 	"use strict";
 

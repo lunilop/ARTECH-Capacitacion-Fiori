@@ -1,0 +1,8 @@
+<mvc:View controllerName="artechcapacitacionfiori.controller.JobDetail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    
+    <Page id="jobPage">
+    </Page>
+
+</mvc:View>

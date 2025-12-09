@@ -7,7 +7,7 @@ sap.ui.define([
 
 	Opa5.extendConfig({
 		arrangements: new Startup(),
-		viewNamespace: "dev.lunilop.clase3.view.",
+		viewNamespace: "artechcapacitacionfiori.view.",
 		autoWait: true
 	});
 });

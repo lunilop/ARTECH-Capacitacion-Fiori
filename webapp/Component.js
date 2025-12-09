@@ -1,15 +1,13 @@
 sap.ui.define([
     "sap/ui/core/UIComponent",
-    "dev/lunilop/clase3/model/models"
+    "artechcapacitacionfiori/model/models"
 ], (UIComponent, models) => {
     "use strict";
 
-    return UIComponent.extend("dev.lunilop.clase3.Component", {
+    return UIComponent.extend("artechcapacitacionfiori.Component", {
         metadata: {
             manifest: "json",
-            interfaces: [
-                "sap.ui.core.IAsyncContentCreation"
-            ]
+            interfaces: ["sap.ui.core.IAsyncContentCreation"]
         },
 
         init() {

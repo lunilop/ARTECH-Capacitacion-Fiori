@@ -2,7 +2,7 @@
 
 specVersion: "4.0"
 metadata:
-  name: dev.lunilop.clase3
+  name: artechcapacitacionfiori
 type: application
 framework:
   name: SAPUI5
